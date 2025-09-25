@@ -1,41 +1,49 @@
 import {ICategory, IProduct} from "@/data/products.types";
 
-const categoryData: ICategory[] = [
+export const categoryData: ICategory[] = [
     {
         id: 1,
-        name: 'iPhone'
+        name: 'iPhone',
+        slug: 'iphone',
     },
     {
         id: 2,
-        name: 'MacBook'
+        name: 'MacBook',
+        slug: 'macbook',
     },
     {
         id: 3,
-        name: 'MacMini'
+        name: 'MacMini',
+        slug: 'macmini',
     },
     {
         id: 4,
-        name: 'AirPods'
+        name: 'AirPods',
+        slug: 'airpods',
     },
     {
         id: 5,
-        name: 'MacStudio'
+        name: 'MacStudio',
+        slug: 'macstudio',
     },
     {
         id: 6,
-        name: 'iPad'
+        name: 'iPad',
+        slug: 'ipad',
     },
     {
         id: 7,
-        name: 'Watch'
+        name: 'Watch',
+        slug: 'watch',
     },
     {
         id: 8,
-        name: 'Аксессуары'
+        name: 'Аксессуары',
+        slug: 'accessories'
     },
 ]
 
-const productsData: IProduct[] = [
+export const productsData: IProduct[] = [
     {id: 1, name: 'iPhone 15', price: 100, categoryId: 1, image: '/', description: 'fake desc'},
     {id: 2, name: 'iPhone 17', price: 100, categoryId: 1, image: '/', description: 'fake desc'},
     {id: 3, name: 'MacBook', price: 200, categoryId: 2, image: '/', description: 'fake desc'},

@@ -1,15 +1,20 @@
 import React from "react";
+import {productsData} from '@/data/products.data'
+import Gallery from "@/app/[category]/Gallery";
 
 interface pageProps {
+  categoryId: number;
   className?: string;
 }
 
-const CategoryPage: React.FC<pageProps> = ({ className }) => {
+
+export default function CategoryPage({className, categoryId}: pageProps){
   return (
     <div className={className}>
-      {/* page component */}
+      <Gallery/>
+      <p>
+        ALO
+      </p>
     </div>
   );
 };
-
-export default CategoryPage;
