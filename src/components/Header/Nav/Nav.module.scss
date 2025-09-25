@@ -1,0 +1,25 @@
+.nav{
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__item{
+    border: 1px solid #C0C0C0;
+    border-radius: 20px;
+    max-width: 110px;
+    width: 110px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s ease-in-out;
+
+    &:hover{
+      background-color: #FB4A05;
+      color: white;
+    }
+  }
+}
+
