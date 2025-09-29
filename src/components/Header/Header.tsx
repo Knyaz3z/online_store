@@ -1,4 +1,4 @@
-import Nav from "@/components/Header/Nav/Nav";
+import Nav from "@/components/Nav/Nav";
 import Image from "next/image";
 import styles from "./Header.module.scss";
 

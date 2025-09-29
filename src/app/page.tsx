@@ -1,5 +1,6 @@
 import Image from "next/image";
-import Nav from "@/components/Header/Nav/Nav";
+import Nav from "@/components/Nav/Nav";
+import {Gallery} from "@/components/Gallery/Gallery";
 
 export default function Home() {
 
@@ -31,7 +32,7 @@ export default function Home() {
             </div>
         </div>
         <Nav/>
-
+        <Gallery/>
         ADVANTAGE
     </div>
   );
