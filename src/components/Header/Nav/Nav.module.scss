@@ -1,6 +1,6 @@
 .nav{
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 2.5em auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,6 +15,12 @@
     align-items: center;
     justify-content: center;
     transition: .3s ease-in-out;
+    cursor: pointer;
+
+    &.active{
+      background-color: #FB4A05;
+      color: white;
+    }
 
     &:hover{
       background-color: #FB4A05;

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Nav from "@/components/Header/Nav/Nav";
 
 export default function Home() {
 
@@ -29,6 +30,7 @@ export default function Home() {
                 </div>
             </div>
         </div>
+        <Nav/>
 
         ADVANTAGE
     </div>

@@ -17,7 +17,7 @@ export default function Header() {
                     <input className='border rounded-xl p-1 ' type="text" placeholder={'поиск'}/>
                 </div>
             </div>
-            <Nav/>
+
         </header>
     )
 }
