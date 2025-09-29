@@ -71,13 +71,13 @@
     background: #fff;
 
     &:hover {
-      border-color: #999;
+      border-color: #dddddd;
       background: #f7f7f7;
     }
   }
 
   &__cart {
-    border: none;
+    border: 1px solid #dddddd;
     background: white;
     color: #81BBF5;
 

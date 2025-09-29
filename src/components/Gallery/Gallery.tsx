@@ -34,14 +34,13 @@ export function Gallery({ className }: GalleryProps) {
         <section>
             <ul className={clsx("gallery grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 container", className)}>
                 {productsToShow.map((item) => (
-                    <li key={item.id} className="opacity-0 animate-fadeIn">
                         <GalleryItem
                             imgLink={item.image}
                             title={item.name}
                             price={item.price}
                             desc={item.description}
+                            key={item.id}
                         />
-                    </li>
                 ))}
             </ul>
             <div className="flex justify-center mt-4 gap-2">

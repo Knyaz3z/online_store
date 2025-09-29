@@ -12,7 +12,7 @@ interface GalleryItemProps {
 
 export default function GalleryItem({ className, imgLink, title, price, desc }: GalleryItemProps) {
     return (
-        <div className={clsx(styles.card, className)}>
+        <li  className={clsx(`opacity-0 animate-fadeIn ${styles.card}`,className)}>
             <div className={styles.card__imgWrapper}>
                 <Image
                     className={styles.card__img}
@@ -30,6 +30,6 @@ export default function GalleryItem({ className, imgLink, title, price, desc }: 
                 <button className={styles.card__more}>Подробнее</button>
                 <button className={styles.card__cart}>В корзину</button>
             </div>
-        </div>
+        </li>
     );
 }

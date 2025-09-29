@@ -3,6 +3,7 @@ import Nav from "@/components/Nav/Nav";
 import {Gallery} from "@/components/Gallery/Gallery";
 import {Suspense} from "react";
 import {WhyUs} from "@/components/WhyUs";
+import GalleryItem from "@/components/Gallery/GalleryItem";
 
 export default function Home() {
 
@@ -41,6 +42,7 @@ export default function Home() {
         </Suspense>
 
         <WhyUs/>
+
     </div>
   );
 }

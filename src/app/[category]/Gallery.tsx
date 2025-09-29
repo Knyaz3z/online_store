@@ -15,10 +15,8 @@ export default function Gallery(){
         <div className='flex gap-2'>
                 {
                 products.map((p, index)=>(
-                    <div key={index} className="product-card border-1">
-                        <p>{p.name}</p>
-                        <p>{p.price}</p>
-                        <p>{p.description}</p>
+                    <div key={index} className="product-card ">
+
                     </div>
                 ))
                 }
