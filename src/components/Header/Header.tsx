@@ -1,6 +1,8 @@
 import Nav from "@/components/Nav/Nav";
 import Image from "next/image";
 import styles from "./Header.module.scss";
+import {SearchIcon} from "@/components/icons/SearchIcon";
+import {CartIcon} from "@/components/icons/CarsIcon";
 
 export default function Header() {
     return (
@@ -12,8 +14,12 @@ export default function Header() {
                 </p>
                 <Image src={'AJ_logo.svg'} alt={'logo'} width={112} height={117}/>
                 <div className='flex gap-1'>
-                    <Image src={'search.svg'} alt={'search'} width={30} height={30}/>
-                    <Image src={'shopping_cart.svg'} alt={'shopping cart'} width={30} height={30}/>
+                    <button className="p-2 hover:bg-gray-100 rounded">
+                        <SearchIcon className="w-10 h-10 cursor-pointer text-gray-700" />
+                    </button>
+                    <button className="p-2 hover:bg-gray-100 rounded">
+                        <CartIcon className="w-10 h-10 cursor-pointer text-gray-700" />
+                    </button>
                     <input className='border rounded-xl p-1 ' type="text" placeholder={'поиск'}/>
                 </div>
             </div>

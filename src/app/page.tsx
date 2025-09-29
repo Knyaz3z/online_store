@@ -2,6 +2,7 @@ import Image from "next/image";
 import Nav from "@/components/Nav/Nav";
 import {Gallery} from "@/components/Gallery/Gallery";
 import {Suspense} from "react";
+import {WhyUs} from "@/components/WhyUs";
 
 export default function Home() {
 
@@ -39,7 +40,7 @@ export default function Home() {
             <Gallery/>
         </Suspense>
 
-        ADVANTAGE
+        <WhyUs/>
     </div>
   );
 }
