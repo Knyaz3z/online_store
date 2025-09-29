@@ -32,7 +32,9 @@ export default function Home() {
                 </div>
             </div>
         </div>
+        <Suspense fallback={<div>Loading...</div>}>
         <Nav/>
+        </Suspense>
         <Suspense fallback={<div>Loading...</div>}>
             <Gallery/>
         </Suspense>
