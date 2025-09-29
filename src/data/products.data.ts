@@ -53,4 +53,5 @@ export const productsData: IProduct[] = [
     {id: 7, name: 'Watch 30', price: 150000, categoryId: 7, image: '/', description: 'fake desc'},
     {id: 8, name: 'Watch 20', price: 150000, categoryId: 7, image: '/', description: 'fake desc'},
     {id: 9, name: 'iPhone', price: 150000, categoryId: 1, image: '/iphone_17_black.png', description: 'fake desc'},
+    {id: 10, name: 'iPhone 17 White', price: 150000, categoryId: 1, image: '/iphone_17_white.png', description: 'fake desc'},
 ]
