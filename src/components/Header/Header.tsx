@@ -1,8 +1,8 @@
-import Nav from "@/components/Nav/Nav";
 import Image from "next/image";
 import styles from "./Header.module.scss";
 import {SearchIcon} from "@/components/icons/SearchIcon";
 import {CartIcon} from "@/components/icons/CarsIcon";
+import Link from "next/link";
 
 export default function Header() {
     return (
@@ -12,7 +12,7 @@ export default function Header() {
                     <span>+7 (495) 540 49 00</span>
                     <span>ежедневно с 10:00 до 22:00</span>
                 </p>
-                <Image src={'AJ_logo.svg'} alt={'logo'} width={112} height={117}/>
+                <Link href={'/'}><Image src={'/AJ_logo.svg'} alt={'logo'} width={112} height={117}/></Link>
                 <div className='flex gap-1'>
                     <button className="p-2 hover:bg-gray-100 rounded">
                         <SearchIcon className="w-10 h-10 cursor-pointer text-gray-700" />

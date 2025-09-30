@@ -40,6 +40,7 @@ export function Gallery({ className }: GalleryProps) {
                             price={item.price}
                             desc={item.description}
                             key={item.id}
+                            id={item.id}
                         />
                 ))}
             </ul>

@@ -1,7 +1,13 @@
 export interface IOption {
     name: string; // например, "Память"
-    values: { value: string; price: number }[];
+    values: { value: string; price: number; available: boolean }[];
 }
+
+// export interface Ispecification {
+//
+//     //ПОДУМАТЬ
+//
+// }
 
 export interface IProduct {
     id: number;
