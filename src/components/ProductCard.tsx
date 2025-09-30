@@ -56,13 +56,13 @@ export default function ProductCard({ product }: ProductCardProps) {
                 <div className="lg:w-2/5">
                     <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
                         {/* Хлебные крошки */}
-                        <div className="text-sm text-gray-500 mb-4">
-                            <span className="hover:text-orange-500 cursor-pointer">Главная</span>
-                            <span className="mx-2">/</span>
-                            <span className="hover:text-orange-500 cursor-pointer">Apple</span>
-                            <span className="mx-2">/</span>
-                            <span className="text-gray-700">{product.name}</span>
-                        </div>
+                        {/*<div className="text-sm text-gray-500 mb-4">*/}
+                        {/*    <span className="hover:text-orange-500 cursor-pointer">Главная</span>*/}
+                        {/*    <span className="mx-2">/</span>*/}
+                        {/*    <span className="hover:text-orange-500 cursor-pointer">Apple</span>*/}
+                        {/*    <span className="mx-2">/</span>*/}
+                        {/*    <span className="text-gray-700">{product.name}</span>*/}
+                        {/*</div>*/}
 
                         <h1 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4 leading-tight">
                             {product.name}
@@ -94,21 +94,21 @@ export default function ProductCard({ product }: ProductCardProps) {
                         {/* Опции товара */}
                         <div className="mb-6">
                             <div className="flex items-center gap-3 mb-3">
-                                <span className="text-gray-700 font-medium">Память:</span>
-                                <div className="flex gap-2">
-                                    {['128GB', '256GB', '512GB', '1TB'].map((size) => (
+                                <span className="text-gray-700 font-medium w-15">Память:</span>
+                                <div className="grid grid-cols-3 gap-0.5 md:grid-cols-4 ">
+                                    {product.options?.[0].values.map((size, index) => (
                                         <button
-                                            key={size}
-                                            className="px-4 py-2 border-2 border-gray-300 rounded-lg hover:border-orange-500 hover:bg-orange-50 transition-colors font-medium"
+                                            key={index}
+                                            className="p-2 border-2 border-gray-300 rounded-lg hover:border-orange-500 hover:bg-orange-50 transition-colors font-medium"
                                         >
-                                            {size}
+                                            {size.value}
                                         </button>
                                     ))}
                                 </div>
                             </div>
                             <div className="flex items-center gap-3">
-                                <span className="text-gray-700 font-medium">Цвет:</span>
-                                <div className="flex gap-2">
+                                <span className="text-gray-700 font-medium w-15">Цвет:</span>
+                                <div className="grid grid-cols-3 gap-0.5 lg:grid-cols-3 ">
                                     {['Черный', 'Белый', 'Серый', 'Синий'].map((color) => (
                                         <button
                                             key={color}

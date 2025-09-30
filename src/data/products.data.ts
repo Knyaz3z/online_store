@@ -26,7 +26,8 @@ export const productsData: IProduct[] = [
                 values: [
                     {value: '128Gb', price: 140000, available: true},
                     {value: '256Gb', price: 150000, available: true},
-                    {value: '512Gb', price: 170000, available: true}
+                    {value: '512Gb', price: 170000, available: true},
+                    {value: '512Gb', price: 170000, available: true},
                 ]
             }
         ],

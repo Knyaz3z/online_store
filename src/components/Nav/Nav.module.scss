@@ -1,9 +1,10 @@
 .nav{
   max-width: 1000px;
   margin: 2.5em auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: .5em;
+  justify-items: center ;
 
   &__item{
     border: 1px solid #C0C0C0;
