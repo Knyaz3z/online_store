@@ -18,9 +18,9 @@ export default function Header() {
                     <button className="p-2 hover:bg-gray-100 rounded">
                         <SearchIcon className="w-10 h-10 cursor-pointer text-gray-700" />
                     </button>
-                    <button className="p-2 hover:bg-gray-100 rounded">
+                    <Link href={'/cart'} className="p-2 hover:bg-gray-100 rounded">
                         <CartIcon className="w-10 h-10 cursor-pointer text-gray-700" />
-                    </button>
+                    </Link>
                     <input className='border rounded-xl p-1 ' type="text" placeholder={'поиск'}/>
                 </div>
             </div>

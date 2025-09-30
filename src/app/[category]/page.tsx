@@ -23,6 +23,7 @@ export default function CategoryPage({params}: CategoryPageProps) {
                             title={item.name}
                             price={item.price}
                             desc={item.description}
+                            id={item.id}
                         />
                     ))
                 }

@@ -11,7 +11,7 @@ export default function CategoryHeaderLinks() {
         <nav className="
             grid
             grid-cols-2
-            
+
             md:grid-cols-4
 
 
@@ -26,7 +26,7 @@ export default function CategoryHeaderLinks() {
                 return (
                     <Link
                         key={c.id}
-                        href={c.slug}
+                        href={`/${c.slug}`}
                         className={`
               flex justify-center items-center px-4 py-2 rounded-xl border 
               text-sm font-medium transition-all duration-200
