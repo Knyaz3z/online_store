@@ -14,7 +14,7 @@ interface GalleryItemProps {
     price: number,
     desc: string,
     id: number,
-    product: IProduct;
+    product?: IProduct;
 }
 
 export default function GalleryItem({
