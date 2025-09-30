@@ -3,6 +3,7 @@ import styles from "./Header.module.scss";
 import {SearchIcon} from "@/components/icons/SearchIcon";
 import {CartIcon} from "@/components/icons/CarsIcon";
 import Link from "next/link";
+import CategoryHeaderLinks from "@/components/Header/CategoryHeaderLinks";
 
 export default function Header() {
     return (
@@ -23,7 +24,7 @@ export default function Header() {
                     <input className='border rounded-xl p-1 ' type="text" placeholder={'поиск'}/>
                 </div>
             </div>
-
+            <CategoryHeaderLinks/>
         </header>
     )
 }

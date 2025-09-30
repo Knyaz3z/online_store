@@ -46,8 +46,9 @@ export function Gallery({ className }: GalleryProps) {
             </ul>
             <div className="flex justify-center mt-4 gap-2">
                 {
-                    pageNumbers.map((pageNumber) => (
+                    pageNumbers.map((pageNumber, index) => (
                         <button
+                            key={index}
                             className={clsx("px-3 py-1 border rounded cursor-pointer transition-all ease-out duration-300", currentPage === pageNumber ? "bg-blue-500 text-white" : "bg-white text-black")}
                             onClick={() => setCurrentPage(pageNumber)}
                         >
