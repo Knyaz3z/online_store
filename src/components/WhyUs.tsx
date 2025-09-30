@@ -31,6 +31,18 @@ export function WhyUs({ className }: WhyUsProps) {
         },
     ];
 
+    // Выносим структурированные данные в переменную
+    const structuredData = {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Почему выбрать наш магазин",
+        "mainEntity": benefits.map((b, i) => ({
+            "@type": "Offer",
+            "name": b.title,
+            "description": b.description
+        }))
+    };
+
     return (
         <section className={clsx("py-16 bg-gray-50", className)} aria-label="Почему выбрать наш магазин">
             <div className="container mx-auto px-4">
@@ -51,16 +63,10 @@ export function WhyUs({ className }: WhyUsProps) {
             </div>
 
             {/* Структурированные данные для поисковиков */}
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-                    "@context": "https://schema.org",
-                    "@type": "WebPage",
-                    "name": "Почему выбрать наш магазин",
-                    "mainEntity": benefits.map((b, i) => ({
-                        "@type": "Offer",
-                        "name": b.title,
-                        "description": b.description
-                    }))
-                })}} />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+            />
         </section>
     );
 }
