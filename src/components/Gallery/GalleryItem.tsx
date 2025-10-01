@@ -6,6 +6,7 @@ import styles from './Gallery.module.scss'
 import Link from "next/link";
 import {useCartStore} from "@/store/cart";
 import {IProduct} from "@/data/products.types";
+import AddToCartButton from "@/components/Gallery/AddToCartButton";
 
 interface GalleryItemProps {
     className?: string;
@@ -45,18 +46,14 @@ export default function GalleryItem({
             <div className={styles.card__buttons}>
                 <Link href={`/product/${id}`}
                       className={styles.card__more}>Подробнее</Link>
-                <button onClick={() =>
-                    addToCart({
-                        id,
-                        name: title,
-                        image: imgLink,
-                        price,
-                        description: desc,
-                        categoryId: id
-                    })
-                }
-                        className={styles.card__cart}>В корзину
-                </button>
+                <AddToCartButton product={{
+                    id,
+                    name: title,
+                    image: imgLink,
+                    price,
+                    description: desc,
+                    categoryId: id
+                }}/>
             </div>
         </li >
     );

@@ -3,6 +3,7 @@ import {Geist, Geist_Mono} from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header/Header";
 import CartLabel from "@/components/CartLabel/CartLabel";
+import AddToCartModal from "@/components/AddToCartModal";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,6 +33,7 @@ export default function RootLayout({
       <Header/>
         {children}
       <CartLabel/>
+      <AddToCartModal/>
       </body>
     </html>
   );

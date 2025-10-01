@@ -3,9 +3,13 @@ import Nav from "@/components/Nav/Nav";
 import {Gallery} from "@/components/Gallery/Gallery";
 import {Suspense} from "react";
 import {WhyUs} from "@/components/WhyUs";
+import Link from "next/link";
+import {productsData} from "@/data/products.data";
 
 export default function Home() {
 
+    const advantageProducts = [29, 30];
+    const visibleProducts = productsData.filter(p => advantageProducts.includes(p.id));
     return (
         <div className="min-h-screen bg-white">
             {/* Hero Section */}
@@ -33,12 +37,12 @@ export default function Home() {
                         Уже в продаже — в магазине AJ.ru
                     </p>
                     <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
-                        <button className="bg-orange-600 hover:bg-orange-700 text-white px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg font-light transition-colors w-full sm:w-auto sm:flex-1 text-center">
+                        <Link href={'/product/1'} className="bg-orange-600 hover:bg-orange-700 text-white px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg font-light transition-colors w-full sm:w-auto sm:flex-1 text-center">
                             Купить
-                        </button>
-                        <button className="border border-gray-400 hover:bg-white hover:text-black text-white px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg font-light transition-colors w-full sm:w-auto sm:flex-1 text-center">
+                        </Link>
+                        <Link href={'/product/1'} className="border border-gray-400 hover:bg-white hover:text-black text-white px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg font-light transition-colors w-full sm:w-auto sm:flex-1 text-center">
                             Подробнее
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </section>
@@ -51,7 +55,7 @@ export default function Home() {
                         <div className="flex flex-col items-center text-center">
                             <div className="mb-8 transform group-hover:scale-105 transition-transform duration-500">
                                 <Image
-                                    src={'/airpods_advantage.png'}
+                                    src={'/airpods_advantage.jpg'}
                                     alt={'AirPods 3'}
                                     width={280}
                                     height={300}
@@ -69,13 +73,13 @@ export default function Home() {
                                     Минимальный размер.
                                 </p>
                                 <div className="space-y-3">
-                                    <div className="text-2xl font-light text-gray-900">24 990 ₽</div>
-                                    <button className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-full text-base font-normal transition-colors w-full max-w-xs">
+                                        <div className="text-2xl font-light text-gray-900">{visibleProducts[0].price.toLocaleString()}  руб.</div>
+                                    <Link href={'/product/29'} className="bg-orange-600 hover:bg-orange-700 block text-white px-8 py-3 rounded-full text-base font-normal transition-colors w-full max-w-xs">
                                         Заказать
-                                    </button>
-                                    <button className="text-blue-600 hover:text-blue-700 text-base font-normal transition-colors">
+                                    </Link>
+                                    <Link href={'/product/29'} className="text-blue-600 hover:text-blue-700 block text-base font-normal transition-colors">
                                         Подробнее ›
-                                    </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -86,8 +90,8 @@ export default function Home() {
                         <div className="flex flex-col items-center text-center">
                             <div className="mb-8 transform group-hover:scale-105 transition-transform duration-500">
                                 <Image
-                                    src={'/airpods_advantage.png'}
-                                    alt={'AirPods Pro'}
+                                    src={'/airpods_advantage.jpg'}
+                                    alt={'AirPods 3'}
                                     width={280}
                                     height={300}
                                     className="w-48 h-auto md:w-56 lg:w-64"
@@ -99,18 +103,18 @@ export default function Home() {
                                     AirPods Pro
                                 </h3>
                                 <p className="text-lg text-gray-600 font-light leading-relaxed max-w-md">
-                                    Активное шумоподавление.
+                                    Максимальная тишина.
                                     <br />
-                                    Превосходное качество звука.
+                                    Минимальный размер.
                                 </p>
                                 <div className="space-y-3">
-                                    <div className="text-2xl font-light text-gray-900">29 990 ₽</div>
-                                    <button className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-full text-base font-normal transition-colors w-full max-w-xs">
+                                    <div className="text-2xl font-light text-gray-900">{visibleProducts[1].price.toLocaleString()}  руб.</div>
+                                    <Link href={'/product/30'} className="bg-orange-600 hover:bg-orange-700 block text-white px-8 py-3 rounded-full text-base font-normal transition-colors w-full max-w-xs">
                                         Заказать
-                                    </button>
-                                    <button className="text-blue-600 hover:text-blue-700 text-base font-normal transition-colors">
+                                    </Link>
+                                    <Link href={'/product/30'} className="text-blue-600 hover:text-blue-700 block text-base font-normal transition-colors">
                                         Подробнее ›
-                                    </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

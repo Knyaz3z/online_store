@@ -3,7 +3,7 @@ import {create} from "zustand";
 import {persist} from "zustand/middleware";
 import {IProduct} from "@/data/products.types";
 
-interface CartItem extends IProduct {
+export interface CartItem extends IProduct {
     quantity: number;
 }
 
