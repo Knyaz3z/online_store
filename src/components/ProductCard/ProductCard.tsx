@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+/* eslint-disable @typescript-eslint/no-empty-interface */
 import {IProduct} from '@/data/products.types';
 import ImageBlock from "@/components/ProductCard/ImageBlock";
 import CentralProductBlock
