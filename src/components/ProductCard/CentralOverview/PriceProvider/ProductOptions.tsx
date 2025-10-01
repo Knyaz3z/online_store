@@ -41,7 +41,7 @@ export default function ProductOptions({product, setSelectedPrice}:ProductOption
                         <span
                             className="text-gray-700 font-medium w-15">Цвет:</span>
                 <div
-                    className="grid grid-cols-3 gap-0.5 lg:grid-cols-3 ">
+                    className="grid grid-cols-2 gap-0.5 lg:grid-cols-3 xs:grid-cols-2">
                     {['Черный', 'Белый', 'Серый', 'Синий'].map((color, index) => (
                         <button
                             key={color}

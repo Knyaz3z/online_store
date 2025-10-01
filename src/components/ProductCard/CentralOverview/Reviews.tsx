@@ -23,8 +23,8 @@ export default function Reviews({}: ReviewsProps) {
                 className="text-blue-600 text-sm font-medium hover:underline cursor-pointer">
                                 247 отзывов
                             </span>
-            <span className="text-gray-400">•</span>
-            <span className="text-green-600 text-sm font-medium">
+            <span className="text-gray-400 hidden sm:block">•</span>
+            <span className="text-green-600 text-sm font-medium hidden sm:block">
                                 ✓ В наличии
                             </span>
         </div>
