@@ -60,10 +60,10 @@ export default function RightBlock({}:RightBlockProps){
 
             {/* Кнопки действий */}
             <div className="space-y-3">
-                <button className="w-full bg-zinc-800 hover:bg-orange-600 cursor-pointer text-white font-semibold py-3 px-4 rounded-lg shadow-md transition-colors duration-200 flex items-center justify-center gap-2">
+                <button className="w-full border border-zinc-800 hover:bg-orange-600 hover:border-0 hover:text-white cursor-pointer text-black font-semibold py-3 px-4 rounded-lg shadow-md transition-colors duration-200 flex items-center justify-center gap-2">
                     Добавить в корзину
                 </button>
-                <button className="w-full bg-blue-800 hover:bg-orange-600 cursor-pointer text-white font-semibold py-3 px-4 rounded-lg shadow-md transition-colors duration-200 flex items-center justify-center gap-2">
+                <button className="w-full bg-orange-600 hover:bg-orange-700 cursor-pointer text-white font-semibold py-3 px-4 rounded-lg shadow-md transition-colors duration-200 flex items-center justify-center gap-2">
                     <span>⚡</span>
                     Купить сейчас
                 </button>

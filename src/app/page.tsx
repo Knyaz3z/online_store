@@ -33,10 +33,10 @@ export default function Home() {
                         Уже в продаже — в магазине AJ.ru
                     </p>
                     <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
-                        <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-full text-base sm:text-lg font-light transition-colors w-full sm:w-auto max-w-xs">
+                        <button className="bg-orange-600 hover:bg-orange-700 text-white px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg font-light transition-colors w-full sm:w-auto sm:flex-1 text-center">
                             Купить
                         </button>
-                        <button className="border border-gray-400 hover:bg-white hover:text-black text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-full text-base sm:text-lg font-light transition-colors w-full sm:w-auto max-w-xs">
+                        <button className="border border-gray-400 hover:bg-white hover:text-black text-white px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg font-light transition-colors w-full sm:w-auto sm:flex-1 text-center">
                             Подробнее
                         </button>
                     </div>
@@ -70,7 +70,7 @@ export default function Home() {
                                 </p>
                                 <div className="space-y-3">
                                     <div className="text-2xl font-light text-gray-900">24 990 ₽</div>
-                                    <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full text-base font-normal transition-colors w-full max-w-xs">
+                                    <button className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-full text-base font-normal transition-colors w-full max-w-xs">
                                         Заказать
                                     </button>
                                     <button className="text-blue-600 hover:text-blue-700 text-base font-normal transition-colors">
@@ -105,7 +105,7 @@ export default function Home() {
                                 </p>
                                 <div className="space-y-3">
                                     <div className="text-2xl font-light text-gray-900">29 990 ₽</div>
-                                    <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full text-base font-normal transition-colors w-full max-w-xs">
+                                    <button className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-full text-base font-normal transition-colors w-full max-w-xs">
                                         Заказать
                                     </button>
                                     <button className="text-blue-600 hover:text-blue-700 text-base font-normal transition-colors">

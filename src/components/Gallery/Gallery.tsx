@@ -49,7 +49,7 @@ export function Gallery({ className }: GalleryProps) {
                     pageNumbers.map((pageNumber, index) => (
                         <button
                             key={index}
-                            className={clsx("px-3 py-1 border rounded cursor-pointer transition-all ease-out duration-300", currentPage === pageNumber ? "bg-blue-500 text-white" : "bg-white text-black")}
+                            className={clsx("px-3 py-1 border rounded cursor-pointer transition-all ease-out duration-300", currentPage === pageNumber ? "bg-orange-600 hover:bg-orange-700 text-white" : "bg-white text-black")}
                             onClick={() => setCurrentPage(pageNumber)}
                         >
                             {pageNumber}

@@ -1,10 +1,9 @@
 .label {
   position: fixed;
-  width: 100px;
-  height: 100px;
+  //width: 100px;
+  //height: 100px;
   bottom: 1rem;
   right: 1rem;
-  background-color: rgb(21 128 61);
   border-radius: 9999px;
   padding: 1rem;
   color: white;
@@ -13,7 +12,6 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 
   &:hover {
-    background-color: rgb(22 101 52);
     transform: scale(1.1);
     box-shadow: 0 8px 25px rgba(21, 128, 61, 0.3);
   }

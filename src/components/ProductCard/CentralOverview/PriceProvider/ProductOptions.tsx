@@ -8,11 +8,15 @@ interface ProductOptionsProps {
 
 export default function ProductOptions({product, setSelectedPrice}:ProductOptionsProps){
     const [isActive, setIsActive] = useState(1)
-
+    const [activeColor, setActiveColor] = useState(1)
 
     function setOption(setter: number, index: number) {
         setSelectedPrice(setter)
         setIsActive(index)
+    }
+
+    function setColor(index: number) {
+        setActiveColor(index)
     }
     return(
         <div className="mb-6">
@@ -38,10 +42,12 @@ export default function ProductOptions({product, setSelectedPrice}:ProductOption
                             className="text-gray-700 font-medium w-15">Цвет:</span>
                 <div
                     className="grid grid-cols-3 gap-0.5 lg:grid-cols-3 ">
-                    {['Черный', 'Белый', 'Серый', 'Синий'].map((color) => (
+                    {['Черный', 'Белый', 'Серый', 'Синий'].map((color, index) => (
                         <button
                             key={color}
-                            className="px-4 py-2 border-2 border-gray-300 rounded-lg hover:border-orange-500 hover:bg-orange-50 transition-colors font-medium"
+                            className={`px-4 py-2 border-2 border-gray-300 rounded-lg hover:border-orange-500 hover:bg-orange-50 transition-colors 
+                            font-medium ${activeColor === index ? 'border-orange-500' : ''}`}
+                            onClick={()=> setActiveColor(index)}
                         >
                             {color}
                         </button>

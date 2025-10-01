@@ -11,13 +11,14 @@ export default function CategoryHeaderLinks() {
         <nav className="
             grid
             grid-cols-2
-
             md:grid-cols-4
-
-
             2xl:grid-cols-8
             gap-3
-            container
+            max-w-350
+            mr-auto
+            ml-auto
+            pr-4
+            pl-4
             py-4
             auto-rows-auto
             ">

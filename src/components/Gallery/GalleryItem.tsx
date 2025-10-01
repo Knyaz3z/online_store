@@ -28,7 +28,7 @@ export default function GalleryItem({
                                     }: GalleryItemProps) {
     const addToCart = useCartStore((state) => state.addToCart);
     return (
-        <li  className={clsx(`opacity-0 animate-fadeIn ${styles.card}`,className)}>
+        <li  className={clsx(`opacity-0 animate-fadeIn m-3 md:m-0 ${styles.card}`,className)}>
             <Link href={`/product/${id}`} className={styles.card__imgWrapper}>
                 <Image
                     className={styles.card__img}
