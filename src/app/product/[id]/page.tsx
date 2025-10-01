@@ -1,6 +1,6 @@
-import { notFound } from 'next/navigation';
-import { productsData } from '@/data/products.data';
-import ProductCard from '@/components/ProductCard';
+import {notFound} from 'next/navigation';
+import {productsData} from '@/data/products.data';
+import ProductCard from '@/components/ProductCard/ProductCard';
 
 interface PageProps {
     params: { id: string };
