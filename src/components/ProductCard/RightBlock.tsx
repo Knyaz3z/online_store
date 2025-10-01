@@ -1,11 +1,13 @@
 'use client'
 import {useState} from "react";
+import AddToCartButton from "@/components/Gallery/AddToCartButton";
+import {IProduct} from "@/data/products.types";
 
 interface RightBlockProps {
-
+    product: IProduct
 }
 
-export default function RightBlock({}:RightBlockProps){
+export default function RightBlock({product}:RightBlockProps){
     const [quantity, setQuantity] = useState(1);
     return(
     <div className="lg:w-1/5">
@@ -60,9 +62,7 @@ export default function RightBlock({}:RightBlockProps){
 
             {/* Кнопки действий */}
             <div className="space-y-3">
-                <button className="w-full border border-zinc-800 hover:bg-orange-600 hover:border-0 hover:text-white cursor-pointer text-black font-semibold py-3 px-4 rounded-lg shadow-md transition-colors duration-200 flex items-center justify-center gap-2">
-                    Добавить в корзину
-                </button>
+                <AddToCartButton product={product} classname={'w-full bg-orange-600 hover:bg-orange-700 cursor-pointer text-white font-semibold py-3 px-4 rounded-lg shadow-md transition-colors duration-200 flex items-center justify-center gap-2'}/>
                 <button className="w-full bg-orange-600 hover:bg-orange-700 cursor-pointer text-white font-semibold py-3 px-4 rounded-lg shadow-md transition-colors duration-200 flex items-center justify-center gap-2">
                     <span>⚡</span>
                     Купить сейчас

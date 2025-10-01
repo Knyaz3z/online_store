@@ -24,7 +24,7 @@ export default function ProductCard({ product }: ProductCardProps) {
                 />
 
                 {/* Правая колонка - информация о цене и кнопки */}
-                <RightBlock
+                <RightBlock product={product}
                 />
 
             </div>

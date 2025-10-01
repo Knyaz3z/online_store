@@ -1,13 +1,13 @@
 import {IProduct} from "@/data/products.types";
 import {CartItem, useCartStore} from "@/store/cart";
 import {useCartModalStore} from "@/store/cardModal";
-import styles from './Gallery.module.scss' // если экспортируешь
 
 interface AddToCartButtonProps {
     product: IProduct;
+    classname?: string;
 }
 
-export default function AddToCartButton({ product }: AddToCartButtonProps) {
+export default function AddToCartButton({ product, classname}: AddToCartButtonProps) {
     const addToCart = useCartStore((state) => state.addToCart);
     const openModal = useCartModalStore((state) => state.openModal);
 
@@ -22,7 +22,7 @@ export default function AddToCartButton({ product }: AddToCartButtonProps) {
 
     return (
         <button
-            className={styles.card__cart}
+            className={`${classname}`}
             onClick={handleClick}
         >
             В корзину

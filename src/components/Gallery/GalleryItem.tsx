@@ -53,7 +53,7 @@ export default function GalleryItem({
                     price,
                     description: desc,
                     categoryId: id
-                }}/>
+                }} classname={styles.card__cart}/>
             </div>
         </li >
     );
