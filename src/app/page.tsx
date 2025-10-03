@@ -6,6 +6,7 @@ import {WhyUs} from "@/components/WhyUs";
 import Link from "next/link";
 import {productsData} from "@/data/products.data";
 import Faq from "@/components/Faq/Faq";
+import Application from "@/components/Application/Application";
 
 export default function Home() {
 
@@ -192,6 +193,8 @@ export default function Home() {
             <WhyUs/>
 
             <Faq/>
+
+            <Application/>
         </div>
     );
 }

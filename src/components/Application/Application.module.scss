@@ -1,0 +1,85 @@
+.application {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+  background: #f9f9f9;
+  padding: 2em;
+  border-radius: 20px;
+
+  &__content {
+    flex: 1;
+  }
+
+  &__title {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 1em;
+    line-height: 1.4;
+  }
+
+  &__form {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+  }
+
+  &__input {
+    flex: 1;
+    min-width: 220px;
+    padding: 0.8em 1em;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 1em;
+    outline: none;
+    transition: border-color .2s;
+
+    &:focus {
+      border-color: #FB4A05;
+    }
+  }
+
+  &__btn {
+    padding: 0.8em 1.5em;
+    background: #FB4A05;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background .3s;
+
+    &:hover {
+      background: #d93b00;
+    }
+  }
+
+  &__image {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* 🔽 Мобильная адаптация */
+@media (max-width: 768px) {
+  .application {
+    flex-direction: column;
+    text-align: center;
+    font-size: .8em;
+
+    &__image {
+      display: none; // скрываем картинку на маленьких экранах
+    }
+
+    &__form {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    &__input, &__btn {
+      width: 100%;
+    }
+  }
+}

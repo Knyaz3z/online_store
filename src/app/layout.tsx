@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header/Header";
 import CartLabel from "@/components/CartLabel/CartLabel";
 import AddToCartModal from "@/components/AddToCartModal";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,6 +35,7 @@ export default function RootLayout({
         {children}
       <CartLabel/>
       <AddToCartModal/>
+      <Footer/>
       </body>
     </html>
   );
