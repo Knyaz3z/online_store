@@ -5,6 +5,7 @@ import {Suspense} from "react";
 import {WhyUs} from "@/components/WhyUs";
 import Link from "next/link";
 import {productsData} from "@/data/products.data";
+import Faq from "@/components/Faq/Faq";
 
 export default function Home() {
 
@@ -189,6 +190,8 @@ export default function Home() {
             </Suspense>
 
             <WhyUs/>
+
+            <Faq/>
         </div>
     );
 }
